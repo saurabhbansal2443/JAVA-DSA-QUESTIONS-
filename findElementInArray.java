@@ -1,5 +1,6 @@
 public class findElementInArray{
     public static void main(String[] args) {
+        
         int k=40;
  
         int[] arr={1,45,32,54,40,23,89,100};
