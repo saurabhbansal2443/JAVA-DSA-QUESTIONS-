@@ -18,11 +18,11 @@ public class NumberGame {
                 guess = sc.nextInt();
 
                 if (guess > secretNumber) {
-                    System.out.println("Number is greater ");
+                    System.out.println("Guessed Number is Greater  ");
                 } else if (guess < secretNumber) {
-                    System.out.println("Number is smaller ");
+                    System.out.println("Guessed Number is Smaller ");
                 } else {
-                    System.out.println("You Guess the number right ");
+                    System.out.println("Congrats you Guessed the correct number ");
                 }
             }
         }

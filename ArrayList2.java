@@ -11,6 +11,8 @@ public class ArrayList2 {
         numbers.add(5);
         numbers.add(6);
 
+        
+
         for(int i=0;i<numbers.size();i++){
             int ele = numbers.get(i);
             System.out.println(ele);
