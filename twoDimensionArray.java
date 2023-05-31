@@ -121,6 +121,7 @@ public class twoDimensionArray {
             min =Math.min(min,currMin);
         }
         System.out.println(min);
+        
 
 
 
