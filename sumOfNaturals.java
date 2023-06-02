@@ -3,7 +3,6 @@ public class sumOfNaturals {
         int n =5;
 
         int ans = (n*(n+1))/2;
-
         System.out.println(ans);
     }
 }
