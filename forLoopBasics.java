@@ -37,26 +37,51 @@ public class forLoopBasics {
         // int max = 0;
 
         // for (int i = 1; i <= n; i++) {
-        //     int m = sc.nextInt();
+        // int m = sc.nextInt();
 
-        //     if (max < m) {
-        //         max = m;
-        //     }
+        // if (max < m) {
+        // max = m;
+        // }
 
         // }
 
         // System.out.println(max);
 
-        // sum of n natural numbers 
+        // sum of n natural numbers
 
+        // int n = sc.nextInt();
+        // int sum = 0;
+        // for(int i =1 ;i<=n;i++){
+        // sum = sum + i;
+        // }
 
-        int n = sc.nextInt();
-            int sum = 0;
-        for(int  i =1 ;i<=n;i++){
-           sum = sum + i;
+        // System.out.println(sum);
+
+        // sum of n odd numbers
+
+        // int n = sc.nextInt();
+        // int sum = 0;
+        // for(int i =1 ;i<=n;i++){
+
+        // if( i%2!=0){
+        // sum = sum + i;
+        // }
+        // }
+
+        // System.out.println(sum);
+
+        // calculating power of a number
+
+        int n = 2;
+        int m = 5;
+
+        int ans = 1;
+
+        for (int i = 1; i <= m; i++) {
+            ans = ans * n;
         }
 
-        System.out.println(sum);
+        System.out.println(ans);
 
     }
 }
