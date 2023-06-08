@@ -125,54 +125,105 @@ public class Strings {
         // ans+=str.charAt(str.length()-1);
         // System.out.println(ans);
 
-        String str = "Helloo toooooooo ttthhheeee wwwwwwwwwwwwwwoooorrld of jjjavaa";
+        //Q9
+        // String str = "Helloo toooooooo ttthhheeee wwwwoooorrld of jjjavaa";
 
-        int[] arr = new int[26];
+        // int[] arr = new int[26];
 
-        for(int i=0;i<str.length();i++){
-            char ch = str.charAt(i);
+        // for(int i=0;i<str.length();i++){
+        //     char ch = str.charAt(i);
 
-            if(ch>='a' && ch<='z'){
-                int idx = ch-'a';
-                arr[idx]=arr[idx]+1;
-            }else if(ch>='A' && ch<='Z'){
-                int idx = ch-'A';
-                arr[idx]=arr[idx]+1;
-            }
+        //     if(ch>='a' && ch<='z'){
+        //         int idx = ch-'a';
+        //         arr[idx]=arr[idx]+1;
+        //     }else if(ch>='A' && ch<='Z'){
+        //         int idx = ch-'A';
+        //         arr[idx]=arr[idx]+1;
+        //     }
+        // }
+
+        // System.out.println(Arrays.toString(arr));
+        // int max =0;
+        // int midx=-1;
+        // int smax= 0;
+        // int sMidx=-1;
+        // for(int i = 0 ;i<arr.length;i++){
+
+        //     if(max<arr[i]){
+        //         smax=max;
+        //         sMidx=midx;
+        //         max=arr[i];
+        //         midx=i;
+
+        //     }else if( smax<arr[i]){
+        //         smax=arr[i];
+        //         sMidx=i;
+        //     }
+        // }
+
+        // System.out.println((char)(sMidx+'a'));
+
+        //Q10
+
+        // String str = "9891a293304";
+
+        //     boolean flag =true;
+        // for(int i =0;i<str.length();i++){
+        //     char ch = str.charAt(i);
+
+        //    //System.out.println(ch);
+
+        //     if( ch>='0' && ch<='9'){
+
+        //     }else{
+        //         flag = false;
+        //         break;
+        //     }
+        // }
+
+        // if( flag == true){
+        //     System.out.println("Only numbered String");
+        // }else{
+        //     System.out.println("Not a  numbered String");
+        // }
+
+        // Q11
+
+        String str = "The world is full of Joy";
+
+        String[] arr = str.split(" ");
+
+        String ans ="";
+
+        for(int i =0;i<arr.length;i++){
+            String rev = reverseString(arr[i]);
+            ans += rev + " ";
+        }
+        System.out.println(ans);
+
+      // reverse the order of words 
+        
+         String ans2="";
+
+        for(int i = arr.length-1;i>=0;i--){
+            ans2+=arr[i]+" ";
         }
 
+        System.out.println(ans2);
 
 
 
-        System.out.println(Arrays.toString(arr));
-        int max =0;
-        int midx=-1;
-        int smax= 0;
-        int sMidx=-1;
-        for(int i = 0 ;i<arr.length;i++){
+    }
 
-            if(max<arr[i]){
-                smax=max;
-                sMidx=midx;
-                max=arr[i];
-                midx=i;
+    public static String reverseString(String str){
 
-            }else if( smax<arr[i]){
-                smax=arr[i];
-                sMidx=i;
-            }
+        String ans = "";
+
+        for(int  i = str.length()-1 ;i>=0;i--){
+            ans+=str.charAt(i);
         }
 
-        System.out.println((char)(sMidx+'a'));
-
-        
-
-
-
-        
-
-
-
+        return ans;
 
     }
 }
