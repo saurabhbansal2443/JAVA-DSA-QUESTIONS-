@@ -26,9 +26,9 @@ public class compress {
         }
 
         ans += str.charAt(str.length() - 1);
-
-        if (count > 1) {
-            count++;
+        
+        count++;
+        if (count > 1) {   
             ans += count;
         }
 
