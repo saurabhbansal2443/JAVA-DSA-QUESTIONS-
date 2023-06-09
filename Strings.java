@@ -189,27 +189,60 @@ public class Strings {
 
         // Q11
 
-        String str = "The world is full of Joy";
+    //     String str = "The world is full of Joy";
 
-        String[] arr = str.split(" ");
+    //     String[] arr = str.split(" ");
 
-        String ans ="";
+    //     String ans ="";
 
-        for(int i =0;i<arr.length;i++){
-            String rev = reverseString(arr[i]);
-            ans += rev + " ";
-        }
-        System.out.println(ans);
+    //     for(int i =0;i<arr.length;i++){
+    //         String rev = reverseString(arr[i]);
+    //         ans += rev + " ";
+    //     }
+    //     System.out.println(ans);
 
-      // reverse the order of words 
+    //   // reverse the order of words 
         
-         String ans2="";
+    //      String ans2="";
 
-        for(int i = arr.length-1;i>=0;i--){
-            ans2+=arr[i]+" ";
+    //     for(int i = arr.length-1;i>=0;i--){
+    //         ans2+=arr[i]+" ";
+    //     }
+
+    //     System.out.println(ans2);
+    
+    //Q12
+
+    String str = "Hello in the world ";  //helloInTheWorld
+
+    String ans = "";
+
+    //checking the first character
+
+    char fc = str.charAt(0);
+
+    if( fc>='A' && fc<='Z'){
+        ans+=(char)(fc-'A'+'a');
+    }else{
+        ans+=fc;
+    }
+    // checking the remaining string 
+    for(int i =1;i<str.length();i++){
+
+        char pre= str.charAt(i-1);
+        char curr = str.charAt(i);
+
+        if(pre==' ' && curr>='a' && curr<='z'){
+                ans+=(char)(curr-'a' + 'A');             
+        }else if(curr!=' '){
+            ans+=curr;
         }
 
-        System.out.println(ans2);
+    }
+
+    System.out.println(ans);
+
+
 
 
 
