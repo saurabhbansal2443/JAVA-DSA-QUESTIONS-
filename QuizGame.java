@@ -56,13 +56,25 @@ public class QuizGame {
     }
 
     public static void questionsData(quiz[] ques){
-        ques[0]=new quiz();
-        ques[0].Question = "Which of the following gods is also known as ‘Gauri Nandan’?";
-        ques[0].option1 = "Agni";
-        ques[0].option2 = "Chnadra";
-        ques[0].option3 = "Hanuman";
-        ques[0].option4 = "Ganesha";
-        ques[0].ans = 4;
+        // ques[0]=new quiz();
+        // ques[0].Question = "Which of the following gods is also known as ‘Gauri Nandan’?";
+        // ques[0].option1 = "Agni";
+        // ques[0].option2 = "Chnadra";
+        // ques[0].option3 = "Hanuman";
+        // ques[0].option4 = "Ganesha";
+        // ques[0].ans = 4;
+
+        quiz  q1 = new quiz();
+
+        q1.Question = "Which of the following gods is also known as ‘Gauri Nandan’?";
+        q1.option1 = "Agni";
+        q1.option2 = "Chnadra";
+        q1.option3 = "Hanuman";
+        q1.option4 = "Ganesha";
+        q1.ans = 4;
+
+        ques[0]=q1;
+
 
         ques[1]=new quiz();
         ques[1].Question = "The wife of which of these famous sports persons was once captain of Indian volleyball team?";

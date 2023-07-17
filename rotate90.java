@@ -1,4 +1,4 @@
-import java.util.Arrays;
+puimport java.util.Arrays;
 
 public class rotate90 {
     public static void main(String[] args) {
